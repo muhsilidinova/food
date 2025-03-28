@@ -22,7 +22,7 @@ export default function Footer() {
           <div className="w-full sm:w-1/4">
             <h3 className="font-semibold text-lg mb-4">Follow Us</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-[#9CAA00]">Facebook</a></li>
+              <li><a href="#" className="hover:text-[#9CAA00]"></a></li>
               <li><a href="#" className="hover:text-[#9CAA00]">Instagram</a></li>
               <li><a href="#" className="hover:text-[#9CAA00]">Twitter</a></li>
             </ul>
