@@ -10,6 +10,7 @@ import foto7 from '../../assets/about/Image (4).png'
 import foto8 from '../../assets/about/Image (5).png'
 import foto9 from '../../assets/about/Image (6).png'
 import foto10 from '../../assets/about/rosemary (1).png'
+import foto11 from '../../assets/about/Our Story (1).png'
 
 function About() {
   return (
@@ -42,30 +43,32 @@ function About() {
   </div>
  </div>
  {/* 4 блок */}
- {/* <div>
- <div>
-  <iframe width="760" height="315" src={video} frameborder="0" allow=" accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <div className='ml-[2400px] mt-[-350px] '>
+  <img src={foto11} className='w-[1300px]'/>
+  <iframe width="1300" height="515" src={video} frameborder="0" allow=" accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
- </div> */}
+
+
+ 
  {/* 5 блок */}
  <div className=' bg-[#FFFFFF] m-auto max-w-[1500px]'>
- <img src={foto6} className='ml-[1140px] w-[300px]' />
+ <img src={foto6} className='ml-[1100px] w-[300px]' />
  <h1 className='font-bold text-[90px] ml-[240px] relative bottom-[220px]'>Sophisticated Process</h1>
- <img src={foto7} className='ml-[50px] relative bottom-[100px] w-[650px]' />
- <h1 className='font-bold text-[40px] text-[#000000] ml-[800px] relative bottom-[500px]'>01.Slice</h1>
- <p className='text-[#4D4D4D] relative bottom-[470px] ml-[800px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Purus lorem id penatibus imperdiet. Turpis egestas <br /> ultricies purus auctor tincidunt lacus nunc. 
+ <img src={foto7} className='ml-[200px] relative bottom-[100px] w-[650px]' />
+ <h1 className='font-bold text-[40px] text-[#000000] ml-[900px] relative bottom-[500px]'>01.Slice</h1>
+ <p className='text-[#4D4D4D] relative bottom-[470px] ml-[900px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Purus lorem id penatibus imperdiet. Turpis egestas <br /> ultricies purus auctor tincidunt lacus nunc. 
   Convallis <br /> pellentesque quis fringilla sagittis. Egestas in risus sit <br /> nunc nunc, arcu donec nam etiam.</p>
  
  <div>
-  <img src={foto8} className='ml-[850px] relative bottom-[170px] w-[450px]' />
-  <h2 className='font-bold text-[40px] ml-[900px] relative bottom-[120px]'>02.Pickled</h2>
-  <p className='text-[#4D4D4D] ml-[900px] relative bottom-[100px]'>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit. Purus lorem <br /> id penatibus imperdiet.</p>
+  <img src={foto8} className='ml-[950px] relative bottom-[170px] w-[450px]' />
+  <h2 className='font-bold text-[40px] ml-[1000px] relative bottom-[120px]'>02.Pickled</h2>
+  <p className='text-[#4D4D4D] ml-[1000px] relative bottom-[100px]'>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit. Purus lorem <br /> id penatibus imperdiet.</p>
  </div>
  <div>
-  <h1 className='text-[40px] font-bold relative bottom-[600px] ml-[100px]'>03.Bake</h1>
- <p className='ml-[100px] relative bottom-[600px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Purus lorem id penatibus imperdiet.</p>
-  <img src={foto9} className='relative bottom-[580px] ml-[100px] w-[450px]' />
-  <img src={foto10} className='relative bottom-[600px] w-[200px]' />
+  <h1 className='text-[40px] font-bold relative bottom-[600px] ml-[250px]'>03.Bake</h1>
+ <p className='ml-[250px] relative bottom-[600px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Purus lorem id penatibus imperdiet.</p>
+  <img src={foto9} className='relative bottom-[580px] ml-[250px] w-[450px]' />
+  <img src={foto10} className='relative bottom-[600px] w-[200px] ml-[100px]' />
   </div>
  </div>
     </div>
