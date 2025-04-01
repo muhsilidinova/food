@@ -9,7 +9,9 @@ import Menu from './pages/menu/Menu'
 import Reservation from './pages/reservation/Reservation'
 import Soup from './pages/soup/Soup'
 import Starter from './pages/starter/Starter'
-import Section from './components/section/Section'
+import Portfolio from './pages/portfolio/Portfolio'
+import Comment from './pages/comment/Comment'
+import Feedback from './pages/feedback/Feedback'
 
 export const myRouter = createBrowserRouter([
     {
@@ -21,8 +23,16 @@ export const myRouter = createBrowserRouter([
                 element: <Home/>
             },
             {
-                path: 'sectionPage',
-                element: <Section/>
+                path: 'portfolioPage',
+                element: <Portfolio/>
+            },
+            {
+                path: 'commentPage',
+                element: <Comment/>
+            },
+            {
+                path: 'feedbackPage',
+                element: <Feedback/>
             },
             {
                 path: 'aboutPage',

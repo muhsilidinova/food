@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Section() {
+function Comment() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function Section() {
   )
 }
 
-export default Section
+export default Comment
