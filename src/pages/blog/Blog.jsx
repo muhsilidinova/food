@@ -49,27 +49,25 @@ const card = [
 
 function Blog() {
   return (
-        <div className="w-full m-auto relative">
-          <div style={{ backgroundImage: `url(${surot7})` }} className='bg-no-repeat w-full bg-si bg-cover pt-70 h-[700px]'>
-            {/* <img src={surot7} className='absolute'/> */}
-            <h1 className='text-[80px] justify-center items-center flex text-white' style={{ fontFamily: "Rufina, serif" }}>Blogs</h1>
+    <div className="w-full m-auto relative">
+      <div style={{ backgroundImage: `url(${surot7})` }} className='bg-no-repeat w-full bg-si bg-cover h-[700px]'>
+        <h1 className='text-[80px] justify-center flex text-white' style={{ fontFamily: "Rufina, serif" }}>Blogs</h1>
+      </div>
+      <div className='grid grid-cols-2 gap-6 w-[1200px] m-auto mt-[80px]'>
+        {card.map((card, index) => (
+          <div key={index} className="bg-white p-4 rounded-lg">
+            <img src={card.img} className="w-full object-cover rounded-lg" />
+            <h1 className="text-[24px] mt-3 font-bold" style={{ fontFamily: "Rufina, serif" }}>
+              {card.title.split("\n").map((line, idx) => (
+                <span key={idx}>{line}<br /></span>
+              ))}
+            </h1>
+            <p className="text-[#4D4D4D] mt-2 text-[13px]">{card.dialogue}</p>
           </div>
-          <div className='grid grid-cols-2 gap-6 w-[1200px] m-auto mt-[200px]'>
-          {card.map((card, index) => (
-            <div key={index} className="bg-white p-4 rounded-lg ">
-              <img src={card.img} className="w-full object-cover rounded-lg"/>
-              <h1 className="text-[24px] mt-3 font-bold" style={{ fontFamily: "Rufina, serif" }}>
-                {card.title.split("\n").map((line, idx) => (
-                  <span key={idx}>{line}<br/></span>
-                ))}
-              </h1>
-              <p className="text-[#4D4D4D] mt-2 text-[13px]">{card.dialogue}</p>
-            </div>
-          ))}
+        ))}
+      </div>
     </div>
-    </div>  
   )
-  
 }
 
 export default Blog
