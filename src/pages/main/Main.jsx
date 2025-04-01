@@ -1,5 +1,4 @@
 import React from 'react'
-import foto1 from '../../assets/main/price2.png'
 import foto2 from '../../assets/main/stake.png'
 import foto3 from '../../assets/starter/Blueberry.png'
 
