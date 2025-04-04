@@ -8,11 +8,7 @@ import surot10 from '../../assets/soup.png'
 import image1 from '../../assets/icon1.png'
 import image2 from '../../assets/blog/asparagus.png'
 import image3 from '../../assets/blog/vegetables.png'
-import image4 from '../../assets/blog/fashion.png'
-import image5 from '../../assets/blog/julie.png'
-import image6 from '../../assets/blog/diannne.png'
 import image7 from '../../assets/Line.png'
-import image10 from '../../assets/Pagination.png'
 import { Link } from "react-router-dom"
 
 export default function Balance() {

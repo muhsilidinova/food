@@ -43,8 +43,6 @@ export default function HomeTwo() {
                 <h2 className="text-2xl font-bold flex"><img src={foto7} className="mr-2 w-[30px]"/>Бронирование</h2>
                 <p className="mt-2 text-lg pb-[40px]">Мы готовы помочь с выбором всего необходимого для мероприятия или встречи с шикарным видом.</p>
             </div>
-        </div>
-    </div>
        {/* <div className="flex flex-col items-center w-full text-black relative font-serif mt-[-500px]">
       <div className="flex w-[1300px] flex-wrap gap-10 justify-center">
         <div className="p-8 rounded-2xl flex flex-col items-center text-center absolute left-[-20px]">
@@ -62,6 +60,8 @@ export default function HomeTwo() {
         </div>
       </div>
     </div> */}
+    </div>
+    </div>
     </div>
   )
 }

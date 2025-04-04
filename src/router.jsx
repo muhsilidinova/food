@@ -10,6 +10,7 @@ import Soup from './pages/soup/Soup'
 import Starter from './pages/starter/Starter'
 import Cart from './components/Cart/Cart'
 import CommentForm from './pages/commentform/CommentForm'
+import SignIn from './components/sigin/SignIn'
 
 export const myRouter = createBrowserRouter([
     {
@@ -23,6 +24,10 @@ export const myRouter = createBrowserRouter([
             {
                 path: 'CartPage',
                 element: <Cart/>
+            },
+             {
+                path: 'signinPage',
+                element: <SignIn/>
             },
             {
                 path: 'commentformPage',
