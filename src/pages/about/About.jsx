@@ -1,15 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import foto1 from '../../assets/about/Image.png'
 import foto2 from '../../assets/about/Image (1).png'
-import foto3 from '../../assets/about/Tomato.svg'
 import foto4 from '../../assets/about/Image (2).png'
 import foto5 from '../../assets/about/Image (3).png'
-import foto6 from '../../assets/about/rosemary.png'
 import foto7 from '../../assets/about/Image (4).png'
 import foto8 from '../../assets/about/Image (5).png'
 import foto9 from '../../assets/about/Image (6).png'
-import foto10 from '../../assets/about/rosemary (1).png'
-import foto11 from '../../assets/about/Our Story (1).png'
 import image1 from '../../assets/about/about4.jpg'
 import image2 from '../../assets/about/about2.jpg'
 import image3 from '../../assets/about/about3.jpg'
@@ -51,75 +46,104 @@ const CarouselSlice = () => {
 
 const About = () => {
   return (
-    <div>
-      {/* Первый блок */}
-      <div className="flex justify-between text-black items-center bg-[#FFFFFF] max-w-[1300px] m-auto px-6 relative">
-        <div className="text-black pt-[300px] font-serif ml-[700px] ">
-          <h1 className="text-[70px] font-bold absolute z-10">Who We Are</h1>
-          <p className='absolute z-10 mt-[110px] ml-5'>The most important thing for us is to give you the <br /> comfortable dining experience</p>
-        </div>
-      </div>
+    <div className="font-serif bg-white">
 
-      {/* Карусель */}
-      <div className="mt-16">
-        <CarouselSlice />
-      </div>
-
-      {/* Второй блок */}
-      <div className="pt-[600px] bg-[#FFFFFF] m-auto max-w-[1500px]">
-        <h1 className="font-bold text-[70px] text-[000000] ml-[220px] relative bottom-[150px]">Our Story</h1>
-        <p className="text-[#4D4D4D] ml-[230px] relative bottom-[120px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing. <br /> Purus lorem id penatibus imperdiet. Turpis egestas ultricies purus <br /> auctor tincidunt lacus nunc.{' '}
+    {/* Первый блок: Who We Are */}
+    <div className="max-w-[1300px] m-auto px-6 pt-[300px] text-black text-center">
+      <h1 className="text-[70px] font-bold mb-6">Who We Are</h1>
+      <p>The most important thing for us is to give you the <br /> comfortable dining experience</p>
+    </div>
+  
+    {/* Карусель */}
+    <div className="mt-16">
+      <CarouselSlice />
+    </div>
+  
+    {/* Our Story блок */}
+    <div className="max-w-[1400px] m-auto px-6 py-32 flex flex-col lg:flex-row gap-12 items-start">
+      <div className="flex-1 mt-[20px]">
+        <h1 className="font-bold text-[70px] mb-6">Our Story</h1>
+        <p className="text-[#4D4D4D] text-lg leading-7">
+        Our story began with simple things.
+From the love of real taste,<br /> to the moments that you want to remember, and to the people <br /> you want to be with.
+We believe that the most precious memories <br /> are born not in a hurry, but in the silence of a cup of tea, in the smell <br /> of fresh pastries, in a light conversation over dinner.
+From the first <br /> day, we collect these moments — slowly, with care, piece by piece, <br /> sip by sip.
+And with every moment like this, we are getting closer to you. <br /> It's not just food here. It's warm in here. There's a house here.
+This is us. <br /> And everything is just beginning.
         </p>
-        <img src={foto2} className="relative bottom-[600px] ml-[750px] mt-[150px] w-[600px] rounded-xl" />
-        <img src={foto3} className="ml-[580px] relative bottom-[1100px] w-[200px]" />
       </div>
-
-      {/* Третий блок */}
-      <div className="mt-[-600px] m-auto max-w-[1500px] font-serif">
-        <h1 className="font-bold text-[40px] text-[#000000] ml-[230px]">Restaurant Manager</h1>
-        <p className="text-[000000] ml-[400px]">Carson Hugn</p>
-        <img src={foto4} className="w-[550px] ml-[150px] mt-[30px] rounded-xl" />
-        <p className="text-[#4D4D4D] ml-[720px] relative bottom-[660px] pt-6">Experienced and passionate about creating memorable
-           dining experiences, Carson has <br /> been managing restaurants for over 10 years. With a keen eye for detail and a 
-           commitment <br />to customer satisfaction, he ensures that every guest feels welcomed and valued. His <br />leadership
-            style emphasizes teamwork, efficiency, and maintaining the <br />highest standards of service.</p>
-        <div>
-          <h1 className="font-bold text-[40px] text-[#000000] ml-[950px] relative bottom-[450px]">Executive Chef</h1>
-          <p className="text-[#000000] ml-[1050px] relative bottom-[440px]">Jane Cooper</p>
-          <img src={foto5} className="ml-[850px] w-[500px] relative bottom-[420px] rounded-xl" />
-          <p className="text-[#4D4D4D] ml-[170px] relative bottom-[600px]">Jane is a talented executive chef with over 9 
-            years of experience in the culinary <br />industry. Her culinary artistry is marked by sophistication, attention to 
-            detail, and a ,<br />passion for using fresh high-quality ingredients. She leads the kitchen with <br />professionalism, 
-            creating not only delicious but visually appealing dishes. <br />Jane is dedicated to inspiring her team and maintaining 
-            high standards <br />of excellence in the kitchen.</p>
-        </div>
-      </div>
-
-      {/* Пятый блок */}
-      <div className="bg-[#FFFFFF] m-auto max-w-[1400px] mt-[-300px] font-serif">
-        <img src={foto6} className="ml-[1000px] w-[300px]"/>
-        <h1 className="font-bold text-[90px] ml-[200px] relative bottom-[220px]">Sophisticated Process</h1>
-        <img src={foto7} className="ml-[100px] relative bottom-[100px] w-[650px] rounded-xl"/>
-        <h1 className="font-bold text-[40px] text-[#000000] ml-[900px] relative bottom-[500px]">01.Slice</h1>
-        <p className="text-[#4D4D4D] relative bottom-[470px] ml-[900px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Purus lorem id penatibus imperdiet. Turpis egestas <br /> ultricies purus auctor tincidunt lacus nunc. Convallis <br /> pellentesque quis fringilla sagittis. Egestas in risus sit <br /> nunc nunc, arcu donec nam etiam.
-        </p>
-        <div>
-          <img src={foto8} className="ml-[900px] relative bottom-[170px] w-[450px] rounded-xl" />
-          <h2 className="font-bold text-[40px] ml-[1000px] relative bottom-[120px]">02.Pickled</h2>
-          <p className="text-[#4D4D4D] ml-[1000px] relative bottom-[120px]">
-            Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit. Purus lorem <br /> id penatibus imperdiet.
-          </p>
-        </div>
-        <div>
-          <h1 className="text-[40px] font-bold relative bottom-[600px] ml-[240px]">03.Bake</h1>
-          <p className="ml-[180px] relative bottom-[600px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Purus lorem id penatibus imperdiet.</p>
-          <img src={foto9} className="relative bottom-[580px] ml-[130px] w-[450px] rounded-xl" />
-          <img src={foto10} className="mt-[-700px] w-[200px] ml-[100px] rounded-xl" />
-        </div>
+      <div className="flex flex-col items-center gap-6">
+        <img src={foto2} className="w-[600px] rounded-xl" />
       </div>
     </div>
+  
+    {/* Третий блок: Менеджер и Шеф-повар */}
+    <div className="max-w-[1400px] m-auto px-6 py-20 grid lg:grid-cols-2 gap-20">
+  
+      {/* Менеджер */}
+      <div>
+        <h1 className="text-[40px] font-bold mb-2">Restaurant Manager</h1>
+        <p className="text-black mb-4">Carson Hugn</p>
+        <img src={foto4} className="w-full rounded-xl mb-4" />
+        <p className="text-[#4D4D4D] text-base leading-7">
+          Experienced and passionate about creating memorable dining experiences, Carson has been managing restaurants for over 10 years.
+          With a keen eye for detail and a commitment to customer satisfaction, he ensures that every guest feels welcomed and valued.
+          His leadership style emphasizes teamwork, efficiency, and maintaining the highest standards of service.
+        </p>
+      </div>
+  
+      {/* Шеф-повар */}
+      <div>
+        <h1 className="text-[40px] font-bold mb-2">Executive Chef</h1>
+        <p className="text-black mb-4">Jane Cooper</p>
+        <img src={foto5} className="w-full rounded-xl mb-4" />
+        <p className="text-[#4D4D4D] text-base leading-7">
+          Jane is a talented executive chef with over 9 years of experience in the culinary industry. Her culinary artistry is marked by
+          sophistication, attention to detail, and a passion for using fresh high-quality ingredients. She leads the kitchen with professionalism,
+          creating not only delicious but visually appealing dishes. Jane is dedicated to inspiring her team and maintaining high standards
+          of excellence in the kitchen.
+        </p>
+      </div>
+    </div>
+  
+    {/* Пятый блок: Sophisticated Process */}
+    <div className="max-w-[1400px] m-auto px-6 py-28">
+      <h1 className="font-bold text-[90px] text-center mb-20">Sophisticated Process</h1>
+  
+      <div className="flex flex-wrap justify-center gap-10">
+  
+        {/* Slice */}
+        <div className="flex flex-col items-center max-w-[400px]">
+          <img src={foto7} className="w-[350px] rounded-xl" />
+          <h2 className="font-bold text-[30px] mt-4">01. Slice</h2>
+          <p className="text-[#4D4D4D] text-center mt-2">
+            The taste of life is the moments when we enjoy every sip, every bite that brings joy. <br />
+            Imagine sitting in a cozy cafe in Bishkek, with the soft evening light and a cup of fragrant tea.
+          </p>
+        </div>
+  
+        {/* Pickled */}
+        <div className="flex flex-col items-center max-w-[400px]">
+          <img src={foto8} className="w-[350px] rounded-xl" />
+          <h2 className="font-bold text-[30px] mt-4">02. Pickled</h2>
+          <p className="text-[#4D4D4D] text-center mt-2">
+            Do you remember the taste of childhood? A jar on a shelf, grandma in an apron, dill, garlic and secret magic.
+            Pickled life isn’t for those with a sweet tooth.
+          </p>
+        </div>
+  
+        {/* Bake */}
+        <div className="flex flex-col items-center max-w-[400px]">
+          <img src={foto9} className="w-[350px] rounded-xl" />
+          <h2 className="font-bold text-[30px] mt-4">03. Bake</h2>
+          <p className="text-[#4D4D4D] text-center mt-2">
+            The smell of fresh pastries fills the air, spreads through the rooms, and warms the coziest corners of memory.
+          </p>
+        </div>
+  
+      </div>
+    </div>
+  </div>
   )
 }
 
