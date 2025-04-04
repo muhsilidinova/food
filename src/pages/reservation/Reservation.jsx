@@ -65,8 +65,10 @@ const ReservationForm = () => {
           <input type="text" name="lastName" placeholder="Last Name" value={formData.lastName} onChange={handleChange} className="border border-b-black p-2 rounded-md w-full h-[50px] bg-[#FFFFFF]"/>
         </div>
 
+        <div className="grid grid-cols-2 gap-4">
         <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} className="border border-b-black p-2 rounded-md w-full h-[50px] bg-[#FFFFFF]"/>
         <input type="tel" name="phone" placeholder="+996XXXXXXXXX" value={formData.phone} onChange={handleChange} className="border border-b-black p-2 rounded-md w-full h-[50px] bg-[#FFFFFF]"/>
+        </div>
         {/* <input
               type="tel"
               value={phone}

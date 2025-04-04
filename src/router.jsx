@@ -2,16 +2,14 @@ import {createBrowserRouter} from 'react-router-dom'
 import Layout from './components/layout/Layout'
 import Home from './pages/home/Home'
 import About from './pages/about/About'
-import Blog from './pages/blog/Blog'
 import Contact from './pages/contact/Contact'
 import Main from './pages/main/Main'
 import Menu from './pages/menu/Menu'
 import Reservation from './pages/reservation/Reservation'
 import Soup from './pages/soup/Soup'
 import Starter from './pages/starter/Starter'
-import Portfolio from './pages/portfolio/Portfolio'
-import Comment from './pages/comment/Comment'
-import Feedback from './pages/feedback/Feedback'
+import Cart from './components/Cart/Cart'
+import CommentForm from './pages/commentform/CommentForm'
 
 export const myRouter = createBrowserRouter([
     {
@@ -23,24 +21,16 @@ export const myRouter = createBrowserRouter([
                 element: <Home/>
             },
             {
-                path: 'portfolioPage',
-                element: <Portfolio/>
+                path: 'CartPage',
+                element: <Cart/>
             },
             {
-                path: 'commentPage',
-                element: <Comment/>
-            },
-            {
-                path: 'feedbackPage',
-                element: <Feedback/>
+                path: 'commentformPage',
+                element: <CommentForm/>
             },
             {
                 path: 'aboutPage',
                 element: <About/>
-            },
-            {
-                path: 'blogPage',
-                element: <Blog/>
             },
             {
                 path: 'contactPage',

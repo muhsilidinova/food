@@ -62,7 +62,7 @@ function Portfolio() {
   return (
     <div className='w-full m-auto text-black'>
       <div style={{ backgroundImage: `url(${foto})` }} className='bg-no-repeat bg-cover h-[700px]'>
-        <h1 className='text-[60px] text-black font-bold pt-80 text-center'style={{ fontFamily: "Rufina, serif" }}>Portfolio - Grids</h1>
+        <h1 className='text-[60px] text-black font-bold pt-80 text-center'>Portfolio - Grids</h1>
       </div>
       <div className='w-[1400px] m-auto'>
         <div className='text-center'>
