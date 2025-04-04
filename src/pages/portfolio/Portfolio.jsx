@@ -6,6 +6,7 @@ import foto3 from '../../assets/portfolio/soup2.png'
 import foto4 from '../../assets/portfolio/launch.png'
 import foto5 from '../../assets/portfolio/cold.png'
 import foto6 from '../../assets/portfolio/rack.png'
+import { Link } from 'react-router-dom'
 
 const card = [
   {
@@ -60,35 +61,23 @@ const card = [
 
 function Portfolio() {
   return (
-    <div className='w-full m-auto text-black'>
-      <div style={{ backgroundImage: `url(${foto})` }} className='bg-no-repeat bg-cover h-[700px]'>
-        <h1 className='text-[60px] text-black font-bold pt-80 text-center'style={{ fontFamily: "Rufina, serif" }}>Portfolio - Grids</h1>
+    <div className='w-full m-auto font-serif'>
+      <div className='pt-[250px]'>
+        <h1 className='text-[60px] text-black font-bold text-center'>Portfolio - Grids</h1>
       </div>
       <div className='w-[1400px] m-auto'>
-        <div className='text-center'>
-          {/* block 2 */}
-          <div className='bg-[#FFFFFF] w-[1400px] ml-[-40px] mt-10 relative '>
-            <ul className='flex list-none ml-[420px] text-[20px] text-[#424242] font-bold cursor-pointer'style={{ fontFamily: "Rufina, serif" }}>
-              <li className='group relative hover:text-[#686868] transition-all ease-in-out'>All<span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#686868] transition-all duration-300 ease-in-out group-hover:w-full"></span></li>
-              <li className='group relative ml-[30px] hover:text-[#686868] transition-colors ease-in-out'>Starter<span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#686868] transition-all duration-300 ease-in-out group-hover:w-full"></span></li>
-              <li className='group relative ml-[30px] hover:text-[#686868] transition-colors ease-in-out'>Launch<span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#686868] transition-all duration-300 ease-in-out group-hover:w-full"></span></li>
-              <li className='group relative ml-[30px] hover:text-[#686868] transition-colors ease-in-out'>dinner<span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#686868] transition-all duration-300 ease-in-out group-hover:w-full"></span></li>
-              <li className='group relative ml-[30px] hover:text-[#686868] transition-colors ease-in-out'>Drinks<span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#686868] transition-all duration-300 ease-in-out group-hover:w-full"></span></li>
-              <li className='group relative ml-[30px] hover:text-[#686868] transition-colors ease-in-out'>Sweets<span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#686868] transition-all duration-300 ease-in-out group-hover:w-full"></span></li>
-              <li className='group relative ml-[30px] hover:text-[#686868] transition-colors ease-in-out'>Fruits<span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#686868] transition-all duration-300 ease-in-out group-hover:w-full"></span></li>
-            </ul>
-          </div>
-        </div>
-        <div className="flex justify-center mt-[50px]">
+        <div className="flex justify-center mt-[250px]">
           <div className="max-w-[1200px]">
             {card.map((card, index) => (
-              <div key={index} className="text-white">
-                <img src={card.img} className={`${card.imgClass} rounded-xl ml-[50px] grayscale-[5%] brightness-75 transition-all duration-500 hover:brightness-90 hover:scale-105 cursor-pointer`} />
-                <h1 className={`${card.titleClass} text-[30px] font-bold relative z-10`} style={{ fontFamily: "Rufina, serif" }}>
+              <div key={index} className="text-white font-serif">
+<Link to={`/card/${card.id}`}>
+  <img src={card.img} className={`${card.imgClass} rounded-xl ml-[50px] grayscale-[5%] brightness-75 transition-all duration-500 hover:brightness-90 hover:scale-105 cursor-pointer`} />
+</Link>
+                <h1 className={`${card.titleClass} text-[30px] font-bold relative z-10`}>
                   {card.title.split("\n").map((line, idx) => (
-                    <span key={idx}>{line}<br /></span>
+                    <span key={idx}>{line}<br/></span>
                   ))}</h1>
-                <p className={`${card.dialogueClass} relative z-10`} style={{ fontFamily: "Rufina, serif" }}>{card.dialogue}</p>
+                <p className={`${card.dialogueClass} relative z-10`}>{card.dialogue}</p>
               </div>
             ))}
           </div>

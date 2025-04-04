@@ -15,8 +15,8 @@ import foto11 from '../../assets/about/Our Story (1).png'
 function About() {
   return (
     <div >
-      <div className="flex justify-between items-center bg-[#233000] max-w-[1300px] m-auto px-6">
-    <img src={foto1} className='mt-[-20px]'/>
+      <div className="flex justify-between items-center  max-w-[1300px] m-auto px-6">
+    {/* <img src={foto1} className='mt-[-20px]'/> */}
    <div className=''>
     <h1 className='fond-bold text-[70px] text-white ml-[-700px] '>Who We Are</h1>
     <p className='text-white ml-[-700px]'>The most important thing for us is to give you the <br /> comfortable dining experience</p>
@@ -43,9 +43,9 @@ function About() {
   </div>
  </div>
  {/* 4 блок */}
-   <div className='ml-[2400px] mt-[-350px] '>
+   <div className='ml-[2400px] mt-[-350px] max-w-[1500px]'>
   <img src={foto11} className='w-[1300px]'/>
-  <iframe width="1300" height="515" src={video} frameborder="0" allow=" accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  {/* <iframe width="1300" height="515" src={video} frameborder="0" allow=" accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
 </div>
 
 

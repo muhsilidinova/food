@@ -8,9 +8,9 @@ import foto5 from '../../assets/kamen.png'
 export default function HomeTwo() {
   return (
     <div className='bg-[#233000] pb-20'>
-            <div className="flex text-white w-[1300px] m-auto items-center justify-between pt-10">
+            <div className="flex text-white w-[1300px] m-auto items-center justify-between pt-10 font-serif">
               <div className="space-y-6 w-[500px] ">
-                <h1 className="text-[70px] font-semibold leading-tight" style={{ fontFamily: "Rufina, serif" }}>Healthy Eating <br/> is an important <br /> part of lifestyle</h1>
+                <h1 className="text-[70px] font-semibold leading-tight">Healthy Eating <br/> is an important <br /> part of lifestyle</h1>
                 <p className="text-lg opacity-80">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br/> Neque congue arcu.</p>
                 <div className="w-[50px]"> 
                   <img src={foto3} className="w-[30px]" />
@@ -26,7 +26,7 @@ export default function HomeTwo() {
       <div className="flex w-[1300px] flex-wrap gap-10 justify-center">
         <div className="p-8 rounded-2xl flex flex-col items-center text-center w-[600px] absolute left-[70px]">
           <img src={foto4} className="w-[550px] rounded-xl" />
-          <h2 className="text-[50px] font-semibold ml-[-250px]"style={{ fontFamily: "Rufina, serif" }}>Start to plan <br/><span className='ml-14'>your diet today</span> </h2>
+          <h2 className="text-[50px] font-semibold ml-[-250px]">Start to plan <br/><span className='ml-14'>your diet today</span> </h2>
           <p className="text-[18px] mt-4 ml-[-190px]"> Lorem ipsum dolor sit amet, consectetur <br/><span className='mr-10'>adipiscing elit. Neque congue arcu.</span> </p>
         </div>
         <div className="flex flex-col items-center text-center w-[600px] mt-[50px] ml-[900px]">

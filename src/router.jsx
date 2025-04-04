@@ -12,6 +12,7 @@ import Starter from './pages/starter/Starter'
 import Portfolio from './pages/portfolio/Portfolio'
 import Comment from './pages/comment/Comment'
 import Feedback from './pages/feedback/Feedback'
+import SignIn from './components/sigin/SignIn'
 
 export const myRouter = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ export const myRouter = createBrowserRouter([
             {
                 path: '/',
                 element: <Home/>
+            },
+            {
+                path: 'signinPage',
+                element: <SignIn/>
             },
             {
                 path: 'portfolioPage',

@@ -68,29 +68,29 @@ export default function Balance() {
     <div className="mt-[50px]">
     <div className="ml-[150px]">
       <img src={surot8} className="w-[300px] rounded"/>
-      <h1 className="text-[#517100] text-[30px] font-semibold mt-[-410px] ml-[15px]" style={{ fontFamily: "Rufina, serif" }}>Starters</h1>
+      <h1 className="text-[#517100] text-[30px] font-semibold mt-[-410px] ml-[15px]" >Starters</h1>
       <Link to='starterPage'><img src={image1} className="ml-[240px] w-[30px] mt-[-30px]"/></Link>
     </div>
     <div className="ml-[550px] mt-[-45px]">
       <img src={surot9} className="w-[300px] rounded"/>
-      <h1 className="text-[#517100] text-[30px] font-semibold mt-[-410px] ml-[15px]" style={{ fontFamily: "Rufina, serif" }}>Mains</h1>
+      <h1 className="text-[#517100] text-[30px] font-semibold mt-[-410px] ml-[15px]" >Mains</h1>
       <Link to='mainPage'><img src={image1} className="ml-[240px] w-[30px] mt-[-30px]"/></Link>
     </div>
     <div className="ml-[970px] mt-[-42px]">
       <img src={surot10} className="w-[300px] rounded"/>
-      <h1 className="text-[#517100] text-[30px] font-semibold mt-[-410px] ml-[15px]" style={{ fontFamily: "Rufina, serif" }}>Soups</h1>
+      <h1 className="text-[#517100] text-[30px] font-semibold mt-[-410px] ml-[15px]">Soups</h1>
       <Link to='soupPage'><img src={image1} className="ml-[240px] w-[30px] mt-[-30px] pb-[500px]"/></Link>
     </div>
     </div>
   </div>
   {/* block 8 */}
   <div className="bg-[#FFFFFF] m-auto text-black w-[1400px] relative">
-      <h1 className="text-[40px] font-bold ml-[150px] relative z-10" style={{ fontFamily: "Rufina, serif" }}>“ Lorem ipsum dolor sit amet,
+      <h1 className="text-[40px] font-bold ml-[150px] relative z-10">“ Lorem ipsum dolor sit amet,
          consectetur adipiscing <br/>elit. Purus lorem id penatibus imperdiet. Turpis egestas <br/>ultricies purus Lorem ipsum dolor sit amet.</h1>
         <img src={image8} className="w-[190px] ml-[1050px] absolute top-[30px] z-0"/>
         <img src={image9} className="w-[100px] mt-[30px] ml-[50px]"/>
         <div className="ml-[170px] absolute top-58">
-        <h1 className="text-[25px] font-bold"style={{ fontFamily: "Rufina, serif" }}>John Doe</h1>
+        <h1 className="text-[25px] font-bold">John Doe</h1>
         <p className="text-[#4D4D4D] text-[13px]">Bloger</p>
         <div className="w-[140px]">
         <img src={image10} className="ml-[800px] absolute top-5"/>
